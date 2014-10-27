@@ -56,7 +56,6 @@ prose:
           label: "Title"
           placeholder: "Título del Reno"
           value: ""
-          type: "text"
       - name: "hardcore"
         field:
           element: "checkbox"
