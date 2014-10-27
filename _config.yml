@@ -46,6 +46,10 @@ prose:
         field:
           element: "hidden"
           value: "/index.html"
+      - name: "ident"
+        field:
+          element: "hidden"
+          value: "reno"
       - name: "title"
         field:
           element: "text"
