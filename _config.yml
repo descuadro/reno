@@ -28,8 +28,8 @@ pygments: false
 permalink: none
 
 prose:
-  siteurl: 'http://prose.github.io/#descuadro/reno/app/'
-  rooturl: '_posts'
+  siteurl: 'http://prose.github.io/#descuadro/reno/'
+  rooturl: 'app/_posts'
   ignore:
     - estudio
 
