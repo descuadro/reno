@@ -29,7 +29,7 @@ permalink: none
 
 prose:
   siteurl: 'http://prose.github.io/#descuadro/reno/'
-  rooturl: 'app/_posts'
+  rooturl: '/app/_posts'
   ignore:
     - estudio
 
