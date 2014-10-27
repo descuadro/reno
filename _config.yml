@@ -29,6 +29,7 @@ permalink: none
 
 prose:
   rooturl: 'app/_posts'
+  media: 'app/images/trabajos'
   ignore:
     - estudio
   metadata:
@@ -76,7 +77,7 @@ prose:
           placeholder: 'URL'
       - name: 'ident'
         field:
-          element: 'hidden'
+          element: 'text'
           label: 'Identificador'
           placeholder: 'Identificador'
       - name: 'layout'
