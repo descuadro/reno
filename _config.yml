@@ -33,7 +33,7 @@ prose:
     - estudio
   metadata:
     app/_posts/renos:
-      - name: "title"
-      field:
-        element: "text"
-        label: "Nombre"
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Nombre'
