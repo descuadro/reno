@@ -31,3 +31,9 @@ prose:
   rooturl: 'app/_posts'
   ignore:
     - estudio
+  metadata:
+    app/_posts/renos:
+      - name: "title"
+      field:
+        element: "text"
+        label: "Nombre"
