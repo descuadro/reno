@@ -55,10 +55,6 @@ prose:
           type: "text"
       - name: "hardcore"
         field:
-          element: "multiselect"
-          label: "Hardcore?"
-          options:
-            - name: "Hardcore Member"
-              value: true
-            - name: "Little Tit"
-              value: false
+          element: "checkbox"
+          label: "Hardcore Member?"
+          value: "false"
