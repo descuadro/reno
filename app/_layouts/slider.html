@@ -1,0 +1,39 @@
+---
+layout: slider
+---
+
+<section class="popupContent mfp-prevent-close">
+<div class="swiper swiper-container">
+	<div class="swiper-wrapper">
+
+		{% for i in (1..page.slides) %}
+
+			<div class="swiper-slide">
+				<picture>
+            <source srcset="/images/estudio/{{ page.ident }}/{{ page.ident }}{{ i }}-hi.jpg" media="(min-width: 1024px)">
+            <source srcset="/images/estudio/{{ page.ident }}/{{ page.ident }}{{ i }}-mid.jpg" media="(min-width: 481px)">
+            <img srcset="/images/estudio/{{ page.ident }}/{{ page.ident }}{{ i }}-lo.jpg" alt="{{ post.title }}">
+        </picture>
+			</div>
+
+		{% endfor %}
+
+	</div>
+	<nav class="slideNav">
+	     <a href="javascript:void(0);" class="prevSlide"><i class="icon-left"></i></a>
+	     <a href="javascript:void(0);" class="nextSlide"><i class="icon-right"></i></a>
+	 </nav>
+</div>
+	<article>
+		<div class="wrapper">
+			{{ content }}
+		</div>
+	</article>
+</section>
+
+<script>
+	picturefill();
+	var swiper = $('.swiper').swiper({ loop: true });
+	$('.swiper .prevSlide').click(function(){ swiper.swipePrev(); });
+	$('.swiper .nextSlide').click(function(){ swiper.swipeNext(); });
+</script>

@@ -1,0 +1,453 @@
+/*  E L E M E N T S  */
+
+#nav {
+	height: 100%;
+	text-align: center;
+	padding: .618em;
+	position: relative;
+
+	.wrapper {
+		display: table;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+
+	ul {
+		max-width: 600px;
+		margin: 0 auto;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	li { list-style: none; }
+
+	a:not(#closeNav) {
+		.inline-block();
+		.h3();
+		padding: .382em 0 0;
+
+		&.language {
+			position: absolute;
+			left: 0;
+			bottom: 1.618em;
+			width: 100%;
+			float: none;
+			.font-size(28px);
+			.opacity(.7);
+			&:hover { .opacity(1); }
+		}
+
+		@media screen and (min-width: 600px) {
+			width: 50%;
+			float: left;
+			.font-size(36.18);
+			&.language { .font-size(28px); }
+		}
+
+		@media screen and (min-width: 1280px) {
+			.font-size(45);
+			&.language { .font-size(36.18) }
+		}
+		@media screen and (min-width: 1440px) {
+			.font-size(62);
+			&.language { .font-size(45) }
+		}
+
+		&.es {
+			span.word1,
+			span.word3 { color: rgb(61, 123, 255); }
+		}
+
+		&.en {
+			span.word1 { color: rgb(255, 177, 61); }
+		}
+	}
+
+	h5 { font-size: .4em; }
+
+
+
+	.clearfix();
+	display: none;
+}
+#closeNav {
+	position: absolute;
+	top: .618em;
+	right: .618em;
+}
+
+#menu-toggle {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: .618em;
+	text-align: center;
+
+	&:hover { text-decoration: none; }
+
+	span {
+		display: block;
+		.h6();
+		padding-bottom: .382em;
+	}
+	i { font-size: 1.618em; }
+
+	&.active span {
+		color: lighten(@secondarycolor, 5);
+		text-decoration: underline;
+	}
+
+	@media screen and (min-width: 1040px) {
+		position: static;
+		span { display: inline; }
+		i { display: none }
+	}
+}
+
+#equipo {
+	 	padding: 0 1em 1.618em;
+
+	 	@media (max-width: 480px) {
+	 		font-size: 80%;
+	 	}
+}
+
+/*
+Estudio Action!
+*/
+
+#estudio {
+
+	display: inline;
+
+	.wrapper {
+	 	width: 100%;
+	 	height: 200%;
+	 	max-height: 720px;
+	 	padding: 0 0 1.618em;
+	 	clear: both;
+	 	.clearfix();
+	}
+
+ 	h3 {
+ 		display: table-cell;
+ 		vertical-align: middle;
+ 		text-align: center;
+ 		color: white;
+ 		background: fadeout(black, 80);
+ 	}
+
+	a {
+		display: table;
+		width: 100%;
+		height: 100/6 + 0%;
+		padding: 0;
+		color: white;
+
+		.desaturate(100);
+
+		&:hover {
+			.transition(all .2s ease-in);
+			.desaturate(0);
+			text-decoration: none;
+		}
+
+	// Ensure phones get the full image!
+		.touch & { .desaturate(0); }
+
+		&.sala { background: url('/images/estudio/sala/sala1-mid.jpg') no-repeat center center; .background-size(cover); }
+		&.booth { background: url('/images/estudio/booth/booth1-mid.jpg') no-repeat center center; .background-size(cover); }
+		&.control { background: url('/images/estudio/control/control4-mid.jpg') no-repeat center center; .background-size(cover); }
+		&.living { background: url('/images/estudio/living/living1-mid.jpg') no-repeat center center; .background-size(cover); }
+		&.refugio { background: url('/images/estudio/refugio/refugio1-mid.jpg') no-repeat center center; .background-size(cover); }
+		&.equipo { background: url('/images/estudio/control/control1-mid.jpg') no-repeat center center; .background-size(cover); }
+	}
+
+	@media screen and (min-width: 600px) {
+		a {
+			&.sala { background: url('/images/estudio/sala/sala1-hi.jpg') no-repeat; .background-size(cover); }
+			&.booth { background: url('/images/estudio/booth/booth1-hi.jpg') no-repeat; .background-size(cover); }
+			&.control { background: url('/images/estudio/control/control4-hi.jpg') no-repeat; .background-size(cover); }
+			&.living { background: url('/images/estudio/living/living1-hi.jpg') no-repeat; .background-size(cover); }
+			&.refugio { background: url('/images/estudio/refugio/refugio1-hi.jpg') no-repeat; .background-size(cover); }
+			&.equipo { background: url('/images/estudio/control/control1-hi.jpg') no-repeat; .background-size(cover); }
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+
+		.wrapper { height: 100%; }
+
+		a {
+			width: 50%;
+			height: 100/3 + 1%;
+
+			float: left;
+		}
+
+		span {
+			height: 100%;
+			width: 50%;
+			float: left;
+		}
+	}
+}
+
+
+
+
+/**/
+
+.slide { 	position: relative; }
+
+img.lazy { display: none; }
+
+/*		Some fine lettering		*/
+
+.lettered {
+	letter-spacing: 0;
+	.intro-es & {
+		font-size: 20px;
+		margin-bottom: 1.618em;
+		text-align: left;
+		text-transform: uppercase;
+
+		span { .inline-block; }
+
+		[class^="line"] { display: block; }
+
+		.line2,
+		.line3 {
+			.h1;
+		}
+
+		.line5 { .h2; }
+
+		//
+
+		.line1, .line4 {
+			font-size: 25px;
+			margin-bottom: .15em;
+		}
+
+		.line3 {
+			margin-top: -.1em;
+		}
+
+		.line4 {
+			letter-spacing: 2px;
+			margin-top: 0.2em;
+			margin-bottom: 0em;
+		}
+
+		.line5 {
+			padding-bottom: .2em;
+			border-bottom: 1px solid @primarycolor;
+		}
+
+		@media screen and (max-width: 376px) {
+		//	.line
+		.line4 { margin-top: 0; }
+		.line5 .word1 {
+				font-size: 70px;
+				letter-spacing: 13px;
+				margin-top: 0.382em;
+			}
+		}
+
+		@media screen and (min-width: 530px) {
+			.line3,
+			.line4 { .inline-block; }
+
+			.line4 {
+				position: relative;
+				top: -1px;
+			}
+
+			.line5 { letter-spacing: 0.13em; }
+
+		}
+	}
+}
+
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.uss/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Copyright 2012, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* Swiper Styles */
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	z-index:1;
+}
+
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+
+	-moz-transition-property:-moz-transform;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+
+	-o-transition-property:-o-transform;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+
+	-ms-transition-property:-ms-transform;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+
+	transition-property:transform;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+
+}
+.swiper-slide {
+	float:left;
+	height: auto !important;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal { -ms-touch-action: pan-y; }
+.swiper-wp8-vertical { -ms-touch-action: pan-x; }
+
+
+/* Pagination */
+
+[class^="pagination"] {
+	position: absolute;
+	top: 2.869em;
+	left: .618em;
+}
+
+.swiper-pagination-switch {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999;
+	box-shadow: 0px 1px 2px #555 inset;
+	margin: 8px 0;
+	cursor: pointer;
+}
+.swiper-active-switch {
+	background: #fff;
+}
+
+
+
+/* Specify Swiper's Size: */
+.swiper-container { max-height: 98%; }
+.swiper-container, .swiper-slide { width: 100%; }
+
+.swiper-slide {
+	position: relative;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.swiper1 { min-height: 200px; }
+
+@media screen and (min-width: 1024px) {
+
+	.swiper-container,
+	.swiper-slide,
+	.model {
+		width: 1024px;
+		height: 683px!important;
+	}
+
+//	#estudio h3 { padding: 1em 0; }
+}
+
+// Popup
+
+.popupContent {
+	background: fadeout(black, 40);
+	position: relative;
+	header { position: relative; }
+
+	h1 { margin: 0; }
+
+	article {
+		text-align: center;
+		position: relative;
+		background: fadeout(black,60);
+		display: block;
+		width: 100%;
+		padding: 15px 0;
+		.box-sizing;
+		margin: 0 auto;
+		.wrapper {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+	}
+
+	.swiper-container { z-index: auto; }
+
+	@media screen and (min-width: 800px) {
+		.font-size(24);
+
+		p { line-height: 1.2em; }
+
+		article {
+			position: absolute;
+			bottom: 0
+		}
+	}
+
+	.pageNav { display: none }
+}
+
+//Coming soon blog effect
+
+.blog {
+	position: relative;
+	span {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		text-align: center;
+		background: fadeout(@bodycolor, 50);
+	}
+
+	.rotated {
+		.rotate(-15deg);
+		position: relative;
+		top: 2em;
+	}
+}

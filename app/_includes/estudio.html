@@ -1,0 +1,21 @@
+<!-- Estudio -->
+
+<section id="estudio">
+    <header>
+        <h2>Estudio</h2>
+    </header>
+
+    <div class="wrapper">
+        {% for post in site.categories['estudio'] reversed %}
+            <a href="estudio/{{ post.ident }}.html" class="ajax {{ post.ident }}">
+                <h3>{{ post.title }}</h3>
+            </a>
+        {% endfor %}
+
+        {% for post in site.categories['equipo'] %}
+            <a href="equipo/{{ post.ident }}.html" class="ajax {{ post.ident }}">
+                <h3>{{ post.title }}</h3>
+            </a>
+        {% endfor %}
+    </div>
+</section>

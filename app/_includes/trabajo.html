@@ -1,0 +1,24 @@
+<!-- Trabajo -->
+
+<section id="trabajo">
+    <h2>Nuestro Trabajo</h2>
+    <ul>
+
+      {% for post in site.categories['trabajos'] reversed %}
+        <li>
+					<a href="{{ post.url }}" rel="external" target="_blank">
+            <img class="lazy" src="/images/1.gif" data-original="/images/trabajos/{{post.ident}}.jpg" alt="Belop">
+            <header>
+                <h4>{{ post.artist }}</h4>
+                {% unless post.artist %}
+                	<h3>{{ post.artist }}</h3>
+                {% endunless %}
+            </header>
+					</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a href="javascript:void(0)" class="more">Ver más <i class="icon-down"></i></a>
+
+</section>

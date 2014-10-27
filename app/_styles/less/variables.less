@@ -1,0 +1,61 @@
+/* 	V A R I A B L E S  */
+
+// ROOT 					==============================
+
+@bodycolor : lighten(black,6);
+@textcolor : white;
+
+// STRUCTURE
+
+@basepadding: .618em;
+
+// TYPOGRAPHY
+
+@basefont : "futura-pt", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@basefontsize : 20;
+@basefontweight : 400;
+@baselineheight : 1.418em;
+@baseline  		: @baselineheight;
+
+@baseheadingfont : "bebas-neue", "Impact", sans-serif;
+@baseheadingfontweight : normal;
+@baseheadingfontcolor : @primarycolor;
+@baseheadingfontcolor2 : @secondarycolor;
+
+@altfont : Cambria, Georgia, Times, "Times New Roman";
+@altlineheight : 1.35em;
+
+@codefont : Monaco, Courier New, monospace;
+
+
+// COLOR
+
+@primarycolor-original 		: rgb(146,51,55);	 
+@primarycolor  				: lighten( @primarycolor-original, 5);
+@secondarycolor   			: rgba(248, 245, 224, 1);
+@bordercolor   				: lighten(@primarycolor, 15%);
+
+@blackbg 		: 	fadeout(@bodycolor, 6);
+@blackhoverbg 	: 	fadeout(@bodycolor, 60);
+
+// Links
+
+@linkcolor 		    : @secondarycolor;
+@linkcolorvisited   : @linkcolor;
+@linkcolorhover  	: lighten(@linkcolor, 5%);
+@linkcolorfocus  	: darken(@linkcolor, 5%);
+
+// Buttons
+
+@buttonbackground 	: @primarycolor;
+@buttonbordercolor 	: 1px solid darken(@buttonbackground, 10%);
+@buttoncolor 		: grey;
+
+// Forms 
+
+@inputbackground 	: white; 
+@inputhover 		: lighten(@primarycolor, 20%);
+@inputfocus 		: @primarycolor, 40%;
+
+
+

@@ -1,0 +1,55 @@
+
+html,
+body,
+main,
+header[role="banner"],
+#nav,
+#estudio .wrapper { height: 100%; }
+
+#intro,
+#contacto { min-height: 100%; }
+
+html {
+	background: @bodycolor;
+	font-size : 62.5%;
+	-webkit-overflow-scrolling : touch; 
+	-webkit-tap-highlight-color : lighten(@primarycolor, 75%); 
+	-webkit-text-size-adjust : 100%; 
+	-ms-text-size-adjust : 100%;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	width : 100%;
+	background-color : transparent;
+	font-family : @basefont;
+	.font-size();
+	line-height : @baselineheight;
+	color : @textcolor;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+	&.noscroll { overflow: hidden; }
+	&.disable-hover { pointer-events: none !important; }
+}
+
+.wrapper {
+	padding: 0 @basepadding;
+	.clearfix;
+}
+
+main {
+	margin: 0 auto;
+	.inherit-wrap();
+	> section {
+		position: relative;
+		.clearfix;
+	}
+}
+
+footer {
+	text-align: center;
+	h5, a, a:visited, a:hover { color: @secondarycolor; }
+	padding: .618em 0;
+}

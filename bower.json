@@ -1,0 +1,14 @@
+{
+  "name": "reno",
+  "version": "0.0.0",
+  "dependencies": {
+    "FitText.js": "~1.2.0",
+    "letteringjs": "~0.6.1",
+    "jquery": "~2.1.1",
+    "picturefill": "~2.1.0",
+    "swiper": "~2.7.0",
+    "magnific-popup": "~0.9.9",
+    "modernizr": "~2.8.3",
+    "letteringjs": "~0.6.1"
+  }
+}

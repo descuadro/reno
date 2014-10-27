@@ -1,0 +1,77 @@
+/* Renos */
+
+
+#renos {
+	padding-bottom: .618em;
+	max-width: 1024px;
+	margin: 0 auto;
+
+	h2,
+	.wrapper { padding: .618em .618em 1em; }
+
+	article {
+		.box-sizing;
+		padding: 0 .618em 1.618em;
+		.clearfix(); }
+
+	[class^="line"] { display: block }
+
+	.line2 { font-size: 1.2em; }
+	.line3 {
+		color: @secondarycolor;
+		font-size: 1.4em;
+		margin-top: .25em;
+	}
+
+	img { max-width: 100%; }
+
+	@media screen and (min-width: 720px) {
+		.clearfix();
+
+		h2 { padding: 1.618em 0 1em; }
+		img { margin-top: 1em }
+
+		padding-bottom: 1.618em;
+
+
+
+		article {
+
+			&.hardcore {
+
+				.wrapper, img {
+					width: 50%;
+					padding: 0;
+					padding: 0 (1.618em/2);
+					.box-sizing;
+				}
+
+				&:nth-of-type(odd) {
+					.wrapper { float: left; }
+					img { float: right; }
+				}
+
+				&:nth-of-type(even) {
+					.wrapper { float: right; }
+					img { float: left; }
+				}
+			}
+
+			&.lilbitch {
+				max-width: 480px;
+				text-align: center;
+
+				img {
+					.rounded(50%);
+					max-width: 220px;
+					margin: 0 auto;
+				}
+
+				@media (min-width: 720px) {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+	}
+}
