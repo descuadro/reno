@@ -57,3 +57,37 @@ prose:
         field:
           element: 'hidden'
           value: 'renos'
+
+    app/_posts/trabajos:
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Disco'
+          placeholder: 'Disco'
+      - name: 'artist'
+        field:
+          element: 'text'
+          label: 'Artista'
+          placeholder: 'Artista'
+      - name: 'url'
+        field:
+          element: 'text'
+          label: 'URL'
+          placeholder: 'URL'
+      - name: 'ident'
+        field:
+          element: 'hidden'
+          label: 'Identificador'
+          placeholder: 'Identificador'
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'null'
+      - name: 'permalink'
+        field:
+          element: 'hidden'
+          value: '/index.html'
+      - name: 'categories'
+        field:
+          element: 'hidden'
+          value: 'trabajos'
