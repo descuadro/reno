@@ -37,3 +37,23 @@ prose:
         field:
           element: 'text'
           label: 'Nombre'
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'null'
+      - name: 'permalink'
+        field:
+          element: 'hidden'
+          value: '/index.html'
+      - name: 'ident'
+        field:
+          element: 'hidden'
+          value: ''
+      - name: 'hardcore'
+        field:
+          element: 'hidden'
+          value: 'false'
+      - name: 'categories'
+        field:
+          element: 'hidden'
+          value: 'renos'
