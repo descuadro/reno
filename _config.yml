@@ -46,13 +46,19 @@ prose:
         field:
           element: "hidden"
           value: "/index.html"
-
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Título del Reno"
+          value: ""
+          type: "text"
       - name: "hardcore"
         field:
           element: "multiselect"
           label: "Hardcore?"
           options:
             - name: "Hardcore Member"
-              value: "true"
+              value: true
             - name: "Little Tit"
-              value: "false"
+              value: false
