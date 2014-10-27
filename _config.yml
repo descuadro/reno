@@ -28,4 +28,5 @@ pygments: false
 permalink: none
 
 prose:
-  rooturl: '/app/_posts'
+  siteurl: 'http://prose.github.io/#descuadro/reno/'
+  rooturl: 'app/_posts'
