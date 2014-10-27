@@ -28,4 +28,4 @@ pygments: false
 permalink: none
 
 prose:
-  rooturl: '_posts'
+  rooturl: 'app/_posts'
