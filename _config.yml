@@ -38,4 +38,5 @@ prose:
       - name: "title"
         field:
           element: "text"
+          label: "Nombre del Reno"
           placeholder: "Nombre"
