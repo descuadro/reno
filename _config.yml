@@ -79,7 +79,7 @@ prose:
         field:
           element: 'text'
           label: 'Identificador'
-          placeholder: 'Identificador'
+          placeholder: 'Identificador (Nombre de imagen sin extensión)'
       - name: 'layout'
         field:
           element: 'hidden'
