@@ -26,3 +26,14 @@ markdown: redcarpet
 pygments: false
 
 permalink: none
+
+prose:
+	rooturl: '_posts'
+  ignore:
+    - _drafts
+    - README.md
+    - bower.json
+    - config.rb
+    - favicon.ico
+    - index.html
+    - package.json
