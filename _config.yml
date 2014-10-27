@@ -35,8 +35,25 @@ prose:
 
   metadata:
     'app/_posts/renos':
-      - name: "title"
+      - name: "category"
         field:
-          element: "text"
-          label: "Nombre del Reno"
-          placeholder: "Nombre"
+          element: "hidden"
+          value: "reno"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "null"
+      - name: "permalink"
+        field:
+          element: "hidden"
+          value: "/index.html"
+
+      - name: "hardcore"
+        field:
+          element: "multiselect"
+          label: "Hardcore?"
+          options:
+            - name: "Hardcore Member"
+              value: "true"
+            - name: "Little Tit"
+              value: "false"
