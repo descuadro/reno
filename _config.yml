@@ -34,7 +34,7 @@ prose:
     - estudio
 
   metadata:
-    renos:
+    app/_posts/renos:
       - name: "category"
         field:
           element: "hidden"
