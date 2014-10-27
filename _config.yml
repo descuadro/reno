@@ -34,14 +34,14 @@ prose:
 
   metadata:
     app/_posts/renos:
-      - name: "category"
+      - name: "categories"
         field:
           element: "hidden"
-          value: "reno"
+          value: renos
       - name: "layout"
         field:
           element: "hidden"
-          value: "null"
+          value: null
       - name: "permalink"
         field:
           element: "hidden"
