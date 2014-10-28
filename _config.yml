@@ -170,6 +170,7 @@ prose:
           element: 'hidden'
           value: 'renos'
 
+    #trabajos
     app/_posts/trabajos:
       - name: 'title'
         field:
