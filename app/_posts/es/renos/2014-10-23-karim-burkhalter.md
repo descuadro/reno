@@ -5,6 +5,7 @@ title:  "Karim Burkhalter"
 ident: karim
 hardcore: true
 categories: renos
+lang: es
 ---
 
 Emprendedor desde el inicio de su carrera, montó su primer estudio con 20 años.

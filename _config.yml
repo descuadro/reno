@@ -27,17 +27,128 @@ pygments: false
 
 permalink: none
 
+# Language Defaults
+
+#nav:
+#  servicios: ""
+#  estudio: ""
+#  renos: ""
+#  trabajo: ""
+#  blog: ""
+#  contacto: ""
+
+# Prose Config
+
 prose:
   rooturl: 'app/_posts'
   media: 'app/images/trabajos'
   ignore:
     - estudio
+    - servicios
   metadata:
-    app/_posts/renos:
+  #servicios
+    app/_posts/en/estudio:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'slider'
+      - name: 'permalink'
+        field:
+          element: 'hidden'
+          value: '/index.html'
+      - name: 'categories'
+        field:
+          element: 'hidden'
+          value: 'estudio'
       - name: 'title'
         field:
           element: 'text'
           label: 'Nombre'
+      - name: 'language'
+        field:
+          element: 'text'
+          label: 'Lenguaje'
+      - name: 'ident'
+        field:
+          element: 'text'
+          placeholder: 'Nombre de la imagen asociada'
+      - name: 'categories'
+      - name: 'slides'
+        field:
+          element: 'text'
+          placeholder: 'Número de imágenes'
+
+    app/_posts/es/estudio:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'slider'
+      - name: 'permalink'
+        field:
+          element: 'hidden'
+          value: '/index.html'
+      - name: 'categories'
+        field:
+          element: 'hidden'
+          value: 'estudio'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Nombre'
+      - name: 'language'
+        field:
+          element: 'text'
+          label: 'Lenguaje'
+      - name: 'ident'
+        field:
+          element: 'text'
+          placeholder: 'Nombre de la imagen asociada'
+      - name: 'categories'
+      - name: 'slides'
+        field:
+          element: 'text'
+          placeholder: 'Número de imágenes'
+
+  #renos
+    app/_posts/en/renos:
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Nombre'
+      - name: 'language'
+        field:
+          element: 'text'
+          label: 'Lenguaje'
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'null'
+      - name: 'permalink'
+        field:
+          element: 'hidden'
+          value: '/index.html'
+      - name: 'ident'
+        field:
+          element: 'hidden'
+          value: ''
+      - name: 'hardcore'
+        field:
+          element: 'hidden'
+          value: 'false'
+      - name: 'categories'
+        field:
+          element: 'hidden'
+          value: 'renos'
+
+    app/_posts/es/renos:
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Nombre'
+      - name: 'language'
+        field:
+          element: 'text'
+          label: 'Lenguaje'
       - name: 'layout'
         field:
           element: 'hidden'

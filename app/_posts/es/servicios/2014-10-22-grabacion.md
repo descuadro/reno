@@ -3,11 +3,10 @@ layout: null
 permalink: /index.html
 title: Grabación
 ident: grabacion
-categories: servicios
-published: true
+category: servicios
+lang: es
 ---
 
-Grok!
 Nos amoldamos a lo que necesites!
 
 Podemos aprovechar la potencia del directo y grabar a tu banda en vivo, o ir toma a toma buscando el sonido perfecto.

@@ -1,9 +1,12 @@
 <!-- Servicios -->
 
+<h1>Servicios</h1>
+
 <section id="servicios">
     <div class="wrapper">
 
         {% for post in site.categories['servicios'] reversed %}
+        {% if post.lang == page.lang %}
 
             <article class="{{ post.ident }}">
                 <div class="wrapper">
@@ -15,6 +18,7 @@
                 </div>
             </article>
 
+        {% endif %}
         {% endfor %}
 
     </div>

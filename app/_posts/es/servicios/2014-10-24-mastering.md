@@ -1,9 +1,10 @@
 ---
 layout: null
 permalink: /index.html
-title:  "Mastering"
+title:  Mastering
 ident: mastering
-categories: servicios
+category: servicios
+lang: es
 ---
 
 Tenemos el equipo perfecto para darle a tus mezclas el último barnizado, aumentando la riqueza armónica y conservando la calidez y dinámica.

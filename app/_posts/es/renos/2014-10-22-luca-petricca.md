@@ -5,6 +5,7 @@ title:  "Luca Petricca"
 ident: luca
 hardcore: true
 categories: renos
+lang: es
 ---
 
 Desde que asistió a su primer festival Loolapalooza en el 92 juró fidelidad a la música independiente.

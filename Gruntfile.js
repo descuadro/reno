@@ -397,7 +397,7 @@ module.exports = function (grunt) {
       server: [
         'less',
         'jekyll:server',
-        'responsive_images'
+        //'responsive_images'
       ],
       dist: [
         'less',

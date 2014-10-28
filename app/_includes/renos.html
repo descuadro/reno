@@ -5,6 +5,7 @@
     <h2>Nosotros</h2>
 
     {% for post in site.categories['renos'] reversed %}
+    {% if post.lang == page.lang %}
         <article id="{{ post.ident }}" class="{% if post.hardcore %}hardcore{% else %}lilbitch{% endif %}">
             <picture>
                 <source srcset="/images/renos/{{ post.ident }}-hi.jpg" media="(min-width: 600px)">
@@ -16,5 +17,6 @@
                 {{ post.content }}
             </div>
         </article>
+    {% endif %}
     {% endfor %}
 </section>

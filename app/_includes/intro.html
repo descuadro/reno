@@ -1,11 +1,13 @@
 <!-- Intro -->
 
-<section id="intro" class="intro-es">
+<section id="intro" class="intro">
   <div class="wrapper">
       <div>
-        <p class="lettered letteringjs-lines-words"><span class="line1"><span class="word1">Somos</span> <span class="word2">un</span> <span class="word3"></span> </span><span class="line2"><span class="word1">Estudio</span> <span class="word2">de</span> <span class="word3"></span> </span><span class="line3"><span class="word1">Grabación</span> <span class="word2"></span> </span><span class="line4"><span class="word1">especializado</span> <span class="word2">en</span> <span class="word3"></span> </span><span class="line5"><span class="word1">Música</span> <span class="word2">Independiente</span> </span></p>
-
-        <p>Vivimos y respiramos música 24 horas al día y sabemos qué hacer para que tu grupo alcance el máximo de su potencial.<br />Reno es el perfecto equilibrio profesional / cómodo / artístico / vintage / moderno, agitado pero no revuelto.<br />Si eres de los pocos apasionados en busca de marcar la diferencia, tenemos todo lo que necesitas. Reserva una visita para comprobar por qué tanta gente insiste en hacer sus discos en Reno con Karim y Luca!</p>
+        {% for post in site.categories['intro']  %}
+        {% if post.lang == page.lang %}
+					{{ post.content }}
+        {% endif %}
+        {% endfor %}
       </div>
   </div>
 </section>
