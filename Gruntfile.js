@@ -104,8 +104,7 @@ module.exports = function (grunt) {
             // Running Jekyll also cleans the target directory.  Exclude any
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
-            '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/images'
+            '!<%= yeoman.dist %>/.git*'
           ]
         }]
       },
@@ -446,7 +445,7 @@ module.exports = function (grunt) {
     'clean',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
-    //'responsive_images',
+    'responsive_images',
     'concurrent:dist',
     'useminPrepare',
     'concat',
