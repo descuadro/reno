@@ -104,7 +104,8 @@ module.exports = function (grunt) {
             // Running Jekyll also cleans the target directory.  Exclude any
             // non-standard `keep_files` here (e.g., the generated files
             // directory from Jekyll Picture Tag).
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/images'
           ]
         }]
       },
@@ -315,7 +316,7 @@ module.exports = function (grunt) {
         },
         files : [{
           expand: true,
-          src: 'renos/**/*.{jpg,gif,png}',
+          src: 'renos/*.{jpg,gif,png}',
           cwd: '<%= yeoman.app %>/images/',
           dest: '.tmp/images/'
         }]
@@ -332,6 +333,7 @@ module.exports = function (grunt) {
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
             'images/**/*',
+            'images/renos/new/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}'
@@ -444,7 +446,7 @@ module.exports = function (grunt) {
     'clean',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
-    'responsive_images',
+    //'responsive_images',
     'concurrent:dist',
     'useminPrepare',
     'concat',

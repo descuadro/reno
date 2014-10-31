@@ -7,10 +7,14 @@
     {% for post in site.categories['renos'] reversed %}
     {% if post.lang == page.lang %}
         <article id="{{ post.ident }}" class="{% if post.hardcore %}hardcore{% else %}lilbitch{% endif %}">
-            <picture>
-                <source srcset="/images/renos/{{ post.ident }}-hi.jpg" media="(min-width: 600px)">
-                <img srcset="/images/renos/{{ post.ident }}-lo.jpg" alt="{{ post.title }}">
-            </picture>
+            {% if post.hardcore %}
+                <picture>
+                    <source srcset="/images/renos/{{ post.ident }}-hi.jpg" media="(min-width: 600px)">
+                    <img srcset="/images/renos/{{ post.ident }}-lo.jpg" alt="{{ post.title }}">
+                </picture>
+            {% else %}
+                <img src="/images/renos/{{ post.ident }}.jpg" alt="{{ post.title }}">
+            {% endif %}
 
             <div class="wrapper">
                 <h3>{{ post.title }}</h3>

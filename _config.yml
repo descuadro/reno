@@ -230,11 +230,11 @@ prose:
           element: 'text'
           label: 'Artista'
           placeholder: 'Artista'
-      - name: 'url'
+      - name: 'link'
         field:
           element: 'text'
-          label: 'URL'
-          placeholder: 'URL'
+          label: 'Link'
+          placeholder: 'Link'
       - name: 'ident'
         field:
           element: 'text'
