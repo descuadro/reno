@@ -44,12 +44,14 @@ header[role="banner"] {
 	}
 
 	@media screen and (min-width: 600px) {
+		height: 100%;
 		padding: 0;
 		.wrapper {
 			display: table;
+			height: 100%;
 			width: 100%
 		}
-		.wrapper div {
+		.wrapper > div {
 			display: table-cell;
 			vertical-align: middle;
 			padding: 3em .618em 1.618em;
@@ -299,8 +301,6 @@ img.model {
 		&:hover {
 			.transition(color .5s ease-out);
 			color: @secondarycolor; }
-
-//		&.icon-vimeo { font-size: 2.4em; }
 	}
 
 	input {
@@ -334,6 +334,8 @@ img.model {
 			.font-size(16);
 		}
 	}
+
+	@media (min-width: 860px) { height: 100%; }
 
 	form { margin: 1.618em auto 3.618em; }
 }

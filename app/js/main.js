@@ -65,8 +65,7 @@ $(function() {
 	});
 
 	$('#nav').find('a').not('.blog').not('.language').click(function(e){
-		var where = $(this).attr('class');
-
+		var where = $(this).attr('href').replace('/', '');
 		e.preventDefault();
 		$.scrollTo('#' + where, 2000);
 	});

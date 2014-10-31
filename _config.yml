@@ -29,13 +29,61 @@ permalink: none
 
 # Language Defaults
 
-#nav:
-#  servicios: ""
-#  estudio: ""
-#  renos: ""
-#  trabajo: ""
-#  blog: ""
-#  contacto: ""
+nav:
+  #español
+  es:
+    servicios:
+      subtitle: "Descubre Nuestros"
+      title: "Servicios"
+      ident: "servicios"
+    estudio:
+      subtitle: "Visita Nuestro"
+      title: "Estudio"
+      ident: "estudio"
+    renos:
+      subtitle: "Acerca de"
+      title: "Nosotros"
+      ident: "renos"
+    trabajo:
+      subtitle: "Conoce Nuestro"
+      title: "Trabajo"
+      ident: "trabajo"
+    blog:
+      subtitle: "Lee Nuestro"
+      title: "Blog"
+      ident: "blog"
+      url: "http://renoestudios.tumblr.com"
+    contacto:
+      subtitle: "Ponte en"
+      title: "Contacto"
+      ident: "contacto"
+  #english
+  en:
+    servicios:
+      subtitle: "Discover"
+      title: "What We Do"
+      ident: "servicios"
+    estudio:
+      subtitle: "Visit Our"
+      title: "Studio"
+      ident: "estudio"
+    renos:
+      subtitle: "Bit More About"
+      title: "Us"
+      ident: "renos"
+    trabajo:
+      subtitle: "Check Out Our"
+      title: "Work"
+      ident: "trabajo"
+    blog:
+      subtitle: "Read Our"
+      title: "Blog"
+      ident: "blog"
+      url: "http://renoestudios.tumblr.com"
+    contacto:
+      subtitle: "Get In"
+      title: "Contact"
+      ident: "contacto"
 
 # Prose Config
 

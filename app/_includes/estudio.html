@@ -8,7 +8,7 @@
     <div class="wrapper">
         {% for post in site.categories['estudio'] reversed %}
         {% if post.lang == page.lang %}
-            <a href="estudio/{{ post.ident }}.html" class="ajax {{ post.ident }}">
+            <a href="{{ post.url }}" class="ajax {{ post.ident }}">
                 <h3>{{ post.title }}</h3>
             </a>
         {% endif %}
@@ -16,7 +16,7 @@
 
         {% for post in site.categories['equipo'] %}
         {% if post.lang == page.lang %}
-            <a href="equipo/{{ post.ident }}.html" class="ajax {{ post.ident }}">
+            <a href="{{ post.url }}" class="ajax {{ post.ident }}">
                 <h3>{{ post.title }}</h3>
             </a>
         {% endif %}
